@@ -66,7 +66,6 @@ calculate_sigma_k2 <- function(yt, xt, alpha_k, beta_k, phi_k) {
   alpha_prime_k <- alpha_k*(1-phi_k)
   epsilon_tk <- y_t_prime - (alpha_prime_k + beta_k * x_t_prime)
   
-  # 计算 σ_k^2
   sigma_k2 <- mean(epsilon_tk^2)
   
   return(sigma_k2)
